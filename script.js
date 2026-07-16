@@ -208,8 +208,8 @@ const validators = {
 
 contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
+  e.stopPropagation();
 
-  // Validasi semua field
   const isValid = ['name', 'email', 'subject', 'message']
     .map(id => validateField(id, `${id}Error`, validators[id]))
     .every(Boolean);
