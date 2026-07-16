@@ -198,7 +198,7 @@ ul { list-style: none; }
 }
 
 .hero-greeting {
-  font-size: 1.1rem;
+  font-size: 1.9 rem;
   color: var(--clr-muted);
   margin-bottom: .5rem;
 }
@@ -308,9 +308,13 @@ ul { list-style: none; }
   box-shadow: var(--shadow-card);
   animation: float 3s ease-in-out infinite;
 }
-.badge-1 { top: 10%; right: -10%; animation-delay: 0s; }
-.badge-2 { bottom: 15%; left: -12%; animation-delay: .8s; }
-.badge-3 { bottom: 5%; right: 0; animation-delay: 1.6s; }
+.badge-1 { top: -18%;    left: 29%;   transform: translateX(-50%); animation-delay: 0s;   }
+.badge-2 { top: 15%;    right: -49%; animation-delay: 0.5s; } /* kanan atas - Satellite System */
+.badge-3 { bottom: 15%; right: -40%; animation-delay: 1s;   } /* kanan bawah - LoRa Signal */
+.badge-4 { top: 15%;    left: -35%;  animation-delay: 1.5s; } /* kiri atas - CST Studio */
+.badge-5 { bottom: 15%; left: -35%;  animation-delay: 2s;   } /* kiri bawah - VNA */
+.badge-6 { bottom: -18%; left: 40.2%;   transform: translateX(-50%); animation-delay: 2.5s; }
+
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -820,4 +824,51 @@ ul { list-style: none; }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+/* Foto profil */
+img.avatar {
+  object-fit: cover;
+  object-position: center top;
+}
+/* ── About section: paragraf lebih rapi ── */
+.about-text p {
+  color: var(--clr-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.about-text p:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-text strong {
+  color: var(--clr-primary);
+  font-weight: 600;
+}
+/* Statistik about - tengah */
+.about-stats {
+  justify-content: center;
+  gap: 3rem;
+}
+/* ── Hero: nama & deskripsi lebih rapi ── */
+.hero-name {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--clr-muted);
+  max-width: 460px;
+  text-align: justify;
+  margin-bottom: 2rem;
 }
