@@ -206,7 +206,7 @@ const validators = {
   });
 });
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   // Validasi semua field
@@ -216,18 +216,34 @@ contactForm.addEventListener('submit', (e) => {
 
   if (!isValid) return;
 
-  // Simulasi pengiriman (ganti dengan fetch ke backend kamu)
   submitBtn.disabled = true;
   btnText.textContent = 'Mengirim...';
 
-  setTimeout(() => {
+  try {
+    const response = await fetch('https://formspree.io/f/xykrkgqn', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name:    document.getElementById('name').value,
+        email:   document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+      }),
+    });
+
+    if (response.ok) {
+      contactForm.reset();
+      formSuccess.classList.add('visible');
+      setTimeout(() => formSuccess.classList.remove('visible'), 5000);
+    } else {
+      btnText.textContent = 'Gagal kirim, coba lagi.';
+    }
+  } catch (err) {
+    btnText.textContent = 'Gagal kirim, coba lagi.';
+  } finally {
     submitBtn.disabled = false;
     btnText.textContent = 'Kirim Pesan 🚀';
-    contactForm.reset();
-    formSuccess.classList.add('visible');
-
-    setTimeout(() => formSuccess.classList.remove('visible'), 5000);
-  }, 1500);
+  }
 });
 
 // ── 8. BACK TO TOP ────────────────────────────────────────────────────────
