@@ -43,10 +43,10 @@ navLinks.forEach(a => {
 
 // ── 3. TYPING ANIMATION ───────────────────────────────────────────────────
 const roles = [
-  'Full Stack Developer',
-  'React & Node.js Engineer',
-  'API Architect',
-  'Open Source Enthusiast',
+  'Telecommunication Engineering',
+  'Radio Frequency Engineering',
+  'Research Assistant Nano Satellite Laboratory',
+  'Satellite Enthusiast',
 ];
 
 const typedEl = document.getElementById('typedText');
