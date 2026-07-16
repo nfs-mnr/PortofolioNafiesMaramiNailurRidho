@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Rizky — Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">&lt;Alex /&gt;</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Halo, saya</p>
+      <h1 class="hero-name">Alex Rizky</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Saya membangun aplikasi web yang cepat, skalabel, dan mudah digunakan.
+        Passionate tentang clean code, UI yang indah, dan pengalaman pengguna yang menyenangkan.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55v-1.93C5.74 21.05 5.1 19 5.1 19c-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.94 10.94 0 0 1 2.87-.39c.97 0 1.95.13 2.87.39 2.18-1.48 3.14-1.17 3.14-1.17.63 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.55 20.45h3.57V9H3.55v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:alex@example.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <div class="avatar">AR</div>
+      </div>
+      <div class="floating-badge badge-1">⚡ React</div>
+      <div class="floating-badge badge-2">🐍 Python</div>
+      <div class="floating-badge badge-3">🐳 Docker</div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Halo! Saya <strong>Alex Rizky</strong>, seorang Full Stack Developer dengan pengalaman <strong>5+ tahun</strong> membangun aplikasi web dari nol sampai production.</p>
+          <p>Saya jatuh cinta dengan coding sejak kuliah, dan sejak itu tidak pernah berhenti belajar. Saya percaya bahwa kode yang baik bukan hanya yang bekerja, tapi juga yang mudah dibaca dan dirawat.</p>
+          <p>Di luar coding, saya suka ngopi sambil baca artikel teknologi, kontribusi ke open source, dan sesekali gaming.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="40">0</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="20">0</span>
+              <span class="stat-label">Klien Puas</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>Info Singkat</h3>
+          <ul class="info-list">
+            <li><span class="info-icon">📍</span><span><strong>Lokasi:</strong> Jakarta, Indonesia</span></li>
+            <li><span class="info-icon">🎓</span><span><strong>Pendidikan:</strong> S1 Ilmu Komputer, UI</span></li>
+            <li><span class="info-icon">💼</span><span><strong>Status:</strong> Open to Work</span></li>
+            <li><span class="info-icon">🌐</span><span><strong>Bahasa:</strong> Indonesia, English</span></li>
+            <li><span class="info-icon">☕</span><span><strong>Hobi:</strong> Kopi, Open Source, Gaming</span></li>
+          </ul>
+          <a href="#" class="btn btn-primary" download>⬇ Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+      <p class="section-subtitle">Teknologi yang saya gunakan sehari-hari</p>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag tag-react">React</span>
+            <span class="tag tag-ts">TypeScript</span>
+            <span class="tag tag-next">Next.js</span>
+            <span class="tag tag-css">CSS / Tailwind</span>
+            <span class="tag tag-html">HTML5</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="tag tag-node">Node.js</span>
+            <span class="tag tag-python">Python</span>
+            <span class="tag tag-express">Express</span>
+            <span class="tag tag-fastapi">FastAPI</span>
+            <span class="tag tag-graphql">GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span class="tag tag-postgres">PostgreSQL</span>
+            <span class="tag tag-mongo">MongoDB</span>
+            <span class="tag tag-redis">Redis</span>
+            <span class="tag tag-mysql">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag tag-docker">Docker</span>
+            <span class="tag tag-git">Git</span>
+            <span class="tag tag-aws">AWS</span>
+            <span class="tag tag-ci">CI/CD</span>
+            <span class="tag tag-linux">Linux</span>
+          </div>
+        </div>
+      </div>
+      <div class="skills-bars">
+        <h3>Profisiensi</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Frontend (React/TS)</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Backend (Node/Python)</span><span>85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Database Design</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>DevOps / Cloud</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Proyek Pilihan</h2>
+      <p class="section-subtitle">Beberapa proyek yang pernah saya kerjakan</p>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="api">API</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-img" style="background: linear-gradient(135deg,#667eea,#764ba2)">
+            <span class="project-emoji">🛒</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            <h3>ShopEasy — E-Commerce Platform</h3>
+            <p>Platform e-commerce full-stack dengan fitur cart, payment gateway Midtrans, dan dashboard admin real-time.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">🔗 Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="api">
+          <div class="project-img" style="background: linear-gradient(135deg,#f093fb,#f5576c)">
+            <span class="project-emoji">🤖</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>FastAPI</span><span>Python</span><span>PostgreSQL</span></div>
+            <h3>AI Task Manager API</h3>
+            <p>REST API untuk manajemen tugas dengan fitur prioritas otomatis berbasis AI dan notifikasi email.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">📖 Docs</a>
+              <a href="#" target="_blank" rel="noopener">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-img" style="background: linear-gradient(135deg,#4facfe,#00f2fe)">
+            <span class="project-emoji">📊</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>Redis</span></div>
+            <h3>Analytics Dashboard</h3>
+            <p>Dashboard visualisasi data real-time dengan grafik interaktif, export PDF, dan multi-tenant support.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">🔗 Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="mobile">
+          <div class="project-img" style="background: linear-gradient(135deg,#43e97b,#38f9d7)">
+            <span class="project-emoji">💬</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>React Native</span><span>Socket.io</span><span>Express</span></div>
+            <h3>ChatBubble — Messaging App</h3>
+            <p>Aplikasi chat real-time dengan fitur grup, end-to-end encryption, dan push notification.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">🔗 Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="api">
+          <div class="project-img" style="background: linear-gradient(135deg,#fa709a,#fee140)">
+            <span class="project-emoji">🔐</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Node.js</span><span>JWT</span><span>Docker</span></div>
+            <h3>Auth Microservice</h3>
+            <p>Layanan autentikasi modular dengan OAuth2, 2FA, rate limiting, dan audit log.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">📖 Docs</a>
+              <a href="#" target="_blank" rel="noopener">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-img" style="background: linear-gradient(135deg,#a18cd1,#fbc2eb)">
+            <span class="project-emoji">📝</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Next.js</span><span>MDX</span><span>Vercel</span></div>
+            <h3>DevBlog — Technical Blog</h3>
+            <p>Blog teknologi dengan MDX, syntax highlighting, dark mode, dan SEO-optimized.</p>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">🔗 Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">⭐ GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Pengalaman</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — Sekarang</span>
+            <h3>Senior Full Stack Developer</h3>
+            <h4>PT. Teknologi Maju Indonesia</h4>
+            <ul>
+              <li>Memimpin tim 5 developer untuk membangun platform SaaS B2B</li>
+              <li>Meningkatkan performa API hingga 60% dengan caching Redis</li>
+              <li>Implementasi CI/CD pipeline dengan GitHub Actions + Docker</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 — 2022</span>
+            <h3>Full Stack Developer</h3>
+            <h4>Startup Fintech XYZ</h4>
+            <ul>
+              <li>Membangun dashboard analytics untuk 10.000+ pengguna aktif</li>
+              <li>Integrasi payment gateway (Midtrans, Xendit)</li>
+              <li>Refactoring monolith ke arsitektur microservices</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 — 2020</span>
+            <h3>Frontend Developer</h3>
+            <h4>Agency Digital Creative</h4>
+            <ul>
+              <li>Membangun 15+ landing page dan web app untuk klien</li>
+              <li>Implementasi desain responsif dan aksesibilitas (WCAG 2.1)</li>
+              <li>Kolaborasi langsung dengan desainer menggunakan Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Hubungi Saya</h2>
+      <p class="section-subtitle">Punya proyek menarik? Mari diskusi!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div><strong>Email</strong><p>alex@example.com</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div><strong>WhatsApp</strong><p>+62 812-3456-7890</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div><strong>Lokasi</strong><p>Jakarta, Indonesia</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <div><strong>Ketersediaan</strong><p>Mon–Fri, 09.00–18.00 WIB</p></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama lengkap kamu" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@kamu.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Topik pesan" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ceritakan proyekmu..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Kirim Pesan 🚀</span>
+          </button>
+          <div class="form-success" id="formSuccess">✅ Pesan berhasil dikirim! Saya akan membalas segera.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Dibuat dengan ❤️ oleh <strong>Alex Rizky</strong> &copy; <span id="year"></span></p>
+      <p class="footer-sub">Dibangun dengan HTML, CSS, dan JavaScript murni.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
